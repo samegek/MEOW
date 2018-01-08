@@ -1,0 +1,30 @@
+#############################
+# 监听地址，设为0.0.0.0可以监听所有端口，共享给局域网使用
+#############################
+listen = http://0.0.0.0:4411
+
+#############################
+# 指定二级代理
+#############################
+# 例子：
+# SOCKS5:
+#   proxy = socks5://127.0.0.1:1080
+# HTTP:
+#   proxy = http://127.0.0.1:8080
+#   proxy = http://user:password@127.0.0.1:8080
+# shadowsocks:
+#   proxy = ss://encrypt_method:password@1.2.3.4:8388
+#   支持的加密方法如下：
+#     aes-128-cfb, aes-192-cfb, aes-256-cfb,
+#     bf-cfb, cast5-cfb, des-cfb, rc4-md5,
+#     chacha20, salsa20, rc4, table
+#proxy = ss://rc4-md5:2770482065@9s.wasai.org:8000
+proxy = ss://rc4-md5:2770482065@5jp.y77u.com:15254
+#proxy = ss://rc4-md5:2770482065@5mg.y77u.com:15254
+#proxy = ss://rc4-md5:2770482065@173.255.209.154:15254
+#proxy = ss://rc4-md5:2770482065@5kr.y77u.com:15254
+#proxy = ss://rc4-md5:2770482065@172.104.93.20:15254
+#proxy = ss://aes-128-cfb:windywinter@ss8.acrossgw.info:20197
+#proxy = ss://aes-128-cfb:windy0101@ss4.acrossgw.info:20197
+judgeByIP = true
+logFile = D:\meowlog
